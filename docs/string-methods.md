@@ -32,10 +32,10 @@ ES6 还为原生的 String 对象，提供了一个`raw()`方法。该方法返�
 
 ```javascript
 String.raw`Hi\n${2+3}!`;
-// 返回 "Hi\\n5!"
+// 返回 "Hi\n5!"
 
 String.raw`Hi\u000A!`;
-// 返回 "Hi\\u000A!"
+// 返回 "Hi\u000A!"
 ```
 
 如果原字符串的斜杠已经转义，那么`String.raw()`会进行再次转义。
